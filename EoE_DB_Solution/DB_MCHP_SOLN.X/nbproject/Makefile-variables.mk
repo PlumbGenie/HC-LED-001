@@ -1,0 +1,41 @@
+#
+# Generated - do not edit!
+#
+# NOCDDL
+#
+CND_BASEDIR=`pwd`
+# IO_STARTER configuration
+CND_ARTIFACT_DIR_IO_STARTER=dist/IO_STARTER/production
+CND_ARTIFACT_NAME_IO_STARTER=DB_MCHP_SOLN.X.production.hex
+CND_ARTIFACT_PATH_IO_STARTER=dist/IO_STARTER/production/DB_MCHP_SOLN.X.production.hex
+CND_PACKAGE_DIR_IO_STARTER=${CND_DISTDIR}/IO_STARTER/package
+CND_PACKAGE_NAME_IO_STARTER=dbmchpsoln.x.tar
+CND_PACKAGE_PATH_IO_STARTER=${CND_DISTDIR}/IO_STARTER/package/dbmchpsoln.x.tar
+# LIGHT configuration
+CND_ARTIFACT_DIR_LIGHT=dist/LIGHT/production
+CND_ARTIFACT_NAME_LIGHT=DB_MCHP_SOLN.X.production.hex
+CND_ARTIFACT_PATH_LIGHT=dist/LIGHT/production/DB_MCHP_SOLN.X.production.hex
+CND_PACKAGE_DIR_LIGHT=${CND_DISTDIR}/LIGHT/package
+CND_PACKAGE_NAME_LIGHT=dbmchpsoln.x.tar
+CND_PACKAGE_PATH_LIGHT=${CND_DISTDIR}/LIGHT/package/dbmchpsoln.x.tar
+# GESTIC configuration
+CND_ARTIFACT_DIR_GESTIC=dist/GESTIC/production
+CND_ARTIFACT_NAME_GESTIC=DB_MCHP_SOLN.X.production.hex
+CND_ARTIFACT_PATH_GESTIC=dist/GESTIC/production/DB_MCHP_SOLN.X.production.hex
+CND_PACKAGE_DIR_GESTIC=${CND_DISTDIR}/GESTIC/package
+CND_PACKAGE_NAME_GESTIC=dbmchpsoln.x.tar
+CND_PACKAGE_PATH_GESTIC=${CND_DISTDIR}/GESTIC/package/dbmchpsoln.x.tar
+# POT configuration
+CND_ARTIFACT_DIR_POT=dist/POT/production
+CND_ARTIFACT_NAME_POT=DB_MCHP_SOLN.X.production.hex
+CND_ARTIFACT_PATH_POT=dist/POT/production/DB_MCHP_SOLN.X.production.hex
+CND_PACKAGE_DIR_POT=${CND_DISTDIR}/POT/package
+CND_PACKAGE_NAME_POT=dbmchpsoln.x.tar
+CND_PACKAGE_PATH_POT=${CND_DISTDIR}/POT/package/dbmchpsoln.x.tar
+# TOGGLE configuration
+CND_ARTIFACT_DIR_TOGGLE=dist/TOGGLE/production
+CND_ARTIFACT_NAME_TOGGLE=DB_MCHP_SOLN.X.production.hex
+CND_ARTIFACT_PATH_TOGGLE=dist/TOGGLE/production/DB_MCHP_SOLN.X.production.hex
+CND_PACKAGE_DIR_TOGGLE=${CND_DISTDIR}/TOGGLE/package
+CND_PACKAGE_NAME_TOGGLE=dbmchpsoln.x.tar
+CND_PACKAGE_PATH_TOGGLE=${CND_DISTDIR}/TOGGLE/package/dbmchpsoln.x.tar

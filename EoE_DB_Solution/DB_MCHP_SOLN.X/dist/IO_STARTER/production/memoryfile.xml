@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/IO_STARTER/production\DB_MCHP_SOLN.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>123841</length>
+      <used>99334</used>
+      <free>24507</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>3808</length>
+      <used>3705</used>
+      <free>103</free>
+    </memory>
+  </executable>
+</project>

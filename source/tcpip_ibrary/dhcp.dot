@@ -1,0 +1,26 @@
+digraph {
+
+	POR [shape=circle,peripheries=2];
+	POR -> selecting;
+	POR -> init_timer;
+
+	subgraph cluster_0 {
+		label = "Timer Handler task";
+		init_timer -> waitForTimer [label = "set T1 to 0" ];
+		startDiscover -> waitForTimer [ label = "send (broadcast )DHCPDISCOVER/\nset T1 to a big number\nSet RX state to selecting"];
+		waitForTimer -> startDiscover [label = "T1 reached 0"];
+		waitForTimer -> startRequest  [label = "T2 reached 0"];
+		waitForTimer -> waitForTimer  [label = "1 second decrement of T1 & T2"];
+		startRequest -> waitForTimer [label = "send (to leasee) DHCPREQUEST/\nset T2 to a big number\nSet RX state to selecting"];
+	}
+
+	subgraph cluster_1 {
+		label = "DHCP Packet Receive task"
+		selecting -> selecting [label = "DHCPOFFER/\nCollect Replies"];
+		selecting -> requesting [label = "DHCPOFFER/\nsend DHCPREQUEST"];
+		requesting -> selecting [label = "DHCPNAK/\nset timers T1 & T2 to 0 (forcing a timer event)"];
+		requesting -> requesting [label = "send DHCPDECLINE for new offers"]
+		requesting -> bound [label = "DHCPACK/\nRecord lease (including leasee)/\nset timers t1 & t2"];
+		bound -> bound [label = "Discard all DHCPOFFER, DHCPACK, DCHPNAK"];
+	}
+}
